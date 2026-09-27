@@ -11,9 +11,12 @@
   body { margin:0; color:var(--white); background:#fff; }
   a { color:inherit; }
   .art-heading { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacing:.06em; text-shadow:1px 1px 0 #777,-1px -1px 0 #eee; }
-  .cover { position:relative; isolation:isolate; background:none; }
-  .cover::before { content:""; position:absolute; inset:0; z-index:-1; background-image:var(--art); background-position:center; background-size:cover; background-attachment:fixed; }
-  /* Keep the artwork anchored to the viewport while foreground content scrolls. */
+  /* One stationary artwork behind the whole page. */
+  body::before { content:""; position:fixed; inset:0; z-index:-2;
+    background:url('https://static.wixstatic.com/media/8be133_4eb061032e5b473d9931a80379a6a643~mv2.jpg') center / cover no-repeat; }
+  /* Each content panel, including its own image, scrolls in the foreground. */
+  .cover { position:relative; background-image:var(--art); background-position:center;
+    background-size:cover; background-repeat:no-repeat; }
   header { position:absolute; inset:0 0 auto; z-index:2; height:73px; background:rgba(33,24,13,.56); font:13px Arial,sans-serif; }
   .nav-wrap { max-width:1000px; height:100%; margin:auto; display:flex; align-items:center; gap:55px; }
   .social { display:flex; gap:14px; align-items:center; }
@@ -22,7 +25,7 @@
   nav { display:flex; justify-content:space-between; gap:30px; flex:1; }
   nav a { text-decoration:none; white-space:nowrap; }
   nav a:hover { text-decoration:underline; }
-  .hero { min-height:840px; height:100vh; max-height:980px; --art:url('https://static.wixstatic.com/media/8be133_4eb061032e5b473d9931a80379a6a643~mv2.jpg'); }
+  .hero { min-height:840px; height:100vh; max-height:980px; background:transparent; }
   .hero h1 { position:absolute; top:26%; right:13%; font-size:clamp(50px,5.5vw,78px); margin:0; }
   .down { position:absolute; bottom:20%; left:50%; transform:translateX(-50%); font:70px/1 Arial,sans-serif; text-decoration:none; }
   .bio { min-height:880px; --art:url('https://static.wixstatic.com/media/8be133_e450e30cafd84d299d033223496c93ed~mv2.jpg'); display:flex; align-items:center; justify-content:center; }
@@ -54,7 +57,6 @@
   .contact-inner { width:460px; text-align:center; margin-right:30%; }
   .contact h2 { margin-bottom:60px; }.contact p { font:18px/1.45 Georgia,serif; }
   footer { color:#aaa; text-align:center; padding:14px; font:12px Arial,sans-serif; }
-  @supports (-webkit-touch-callout: none) { .cover::before { background-attachment:scroll; } }
   @media(max-width:750px) { header { height:auto; position:absolute; } .nav-wrap { padding:15px; display:block; } .social { justify-content:center; margin-bottom:12px; } nav { justify-content:center; flex-wrap:wrap; gap:10px 20px; } .hero { min-height:650px; } .hero h1 { top:35%; right:5%; left:5%; text-align:center; } .bio { min-height:700px; } .bio-inner { grid-template-columns:1fr; padding:60px 0; } .bio h2 { text-align:center; margin:0 0 25px; } .bio-copy { padding-left:15px; } .gallery-grid { gap:18px; } .gallery-grid img { height:300px; } .gallery-grid h3 { font-size:30px; } .workshops { min-height:650px; } .workshop-copy { margin:50px auto; } .timeline li { grid-template-columns:1fr; gap:3px; } .contact-inner { margin:0; } }
 </style>
 </head>
