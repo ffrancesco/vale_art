@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paintings, illustrations and art workshops by Valeria Rizzo in Aalborg, Denmark.">
+  <title>Valeria Rizzo — Artelier</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23271e23'/%3E%3Ctext x='32' y='45' fill='%23f7ede4' text-anchor='middle' font-family='serif' font-size='42'%3EV%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: light; --ink:#261e24; --paper:#f8f5f1; --accent:#9a434b; --line:#d8ccc8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:1rem/1.65 system-ui,-apple-system,Segoe UI,sans-serif; }
+    a { color:inherit; text-underline-offset:.22em; }
+    a:hover { color:var(--accent); }
+    img { width:100%; display:block; object-fit:cover; }
+    .wrap { width:min(1120px,calc(100% - 2.5rem)); margin:auto; }
+    header { border-bottom:1px solid var(--line); background:var(--paper); }
+    .top { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding:1.2rem 0; }
+    .brand, h1, h2, h3 { font-family:Georgia,'Times New Roman',serif; font-weight:400; }
+    .brand { font-size:1.5rem; letter-spacing:.02em; text-decoration:none; white-space:nowrap; }
+    nav, .social { display:flex; flex-wrap:wrap; gap:.45rem 1.15rem; align-items:center; }
+    nav a, .social a { font-size:.88rem; text-decoration:none; }
+    .social { justify-content:flex-end; }
+    .hero { display:grid; grid-template-columns:1.1fr .9fr; min-height:570px; align-items:center; gap:4rem; padding:4rem 0; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.2em; color:var(--accent); font-size:.8rem; font-weight:700; }
+    h1 { font-size:clamp(3.8rem,8vw,7.5rem); line-height:.98; margin:.8rem 0 1.5rem; }
+    .lead { font-size:1.2rem; max-width:36rem; }
+    .hero img { height:480px; }
+    section { padding:5rem 0; border-top:1px solid var(--line); }
+    h2 { font-size:clamp(2.5rem,5vw,4.2rem); line-height:1.1; margin:.3rem 0 2rem; }
+    h3 { font-size:1.75rem; margin:.4rem 0; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
+    .split img { aspect-ratio:4/3; }
+    .prose { max-width:66ch; }
+    .gallery { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; }
+    .gallery article img { aspect-ratio:3/3.4; }
+    .gallery article a { display:block; }
+    .gallery article p { margin:.3rem 0 0; }
+    .timeline { list-style:none; padding:0; margin:2.5rem 0 0; border-left:1px solid var(--accent); }
+    .timeline li { position:relative; padding:0 0 2rem 2rem; }
+    .timeline li::before { content:''; position:absolute; width:.65rem; height:.65rem; border-radius:50%; background:var(--accent); left:-.36rem; top:.48rem; }
+    .timeline time { color:var(--accent); font-weight:700; }
+    .timeline p { margin:.2rem 0; }
+    .timeline a { font-size:.9rem; }
+    .note { font-size:.9rem; color:#65565a; }
+    .button { display:inline-block; border:1px solid var(--ink); padding:.65rem 1rem; text-decoration:none; margin-top:.9rem; }
+    footer { border-top:1px solid var(--line); padding:2rem 0; font-size:.9rem; }
+    @media(max-width:800px) { .top { align-items:flex-start; flex-direction:column; } .hero,.split { grid-template-columns:1fr; gap:2rem; min-height:0; } .hero { padding:3rem 0; } .hero img { height:auto; max-height:520px; } section { padding:3.5rem 0; } }
+    @media(max-width:520px) { .gallery { grid-template-columns:1fr; } h1 { font-size:3.8rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="#home">Valeria Rizzo</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#gallery">Gallery</a><a href="#workshops">Workshops</a><a href="#news">News</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="social"><a href="https://www.instagram.com/valipaint/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/valeria.rizzo.54738" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div>
+    </div>
+  </header>
+  <main id="home">
+    <div class="wrap hero">
+      <div><span class="eyebrow">Artist · Illustrator · Aalborg</span><h1>Valeria<br>Rizzo</h1><p class="lead">Oil paintings, illustrations and creative workshops from my studio in Aalborg.</p><a class="button" href="#gallery">Explore the work</a></div>
+      <img src="https://static.wixstatic.com/media/8be133_e450e30cafd84d299d033223496c93ed~mv2.jpg" alt="Valeria Rizzo in her studio">
+    </div>
+    <section id="about"><div class="wrap split"><div><span class="eyebrow">About the artist</span><h2>Art across canvas, paper and walls.</h2><div class="prose"><p>Valeria Rizzo graduated from the Academy of Fine Arts in Bologna in 2010. Her work in oil painting grew from portraiture into surreal scenes. She also creates digital illustrations and has illustrated children's books.</p><p>In 2020 she joined other artists at Backyard Studios in Aalborg and started Artelier, where she offers courses, workshops and exhibitions.</p></div></div><img src="https://static.wixstatic.com/media/8be133_fe0573f189de481abc08527c82d72833~mv2.png" alt="Artwork and studio scene"></div></section>
+    <section id="gallery"><div class="wrap"><span class="eyebrow">Selected work</span><h2>Gallery</h2><div class="gallery"><article><a href="https://www.valeandart.com/paintings"><img loading="lazy" src="https://static.wixstatic.com/media/8be133_415001bd65e64ce58bc88fdc8929a309~mv2.jpg" alt="Example of Valeria's painting"><h3>Paintings ↗</h3></a><p>Oil paintings and commissions.</p></article><article><a href="https://www.valeandart.com/illustrations"><img loading="lazy" src="https://static.wixstatic.com/media/8be133_2f87b4382221489284aac93825d49f47~mv2.jpeg" alt="Example of Valeria's illustration"><h3>Illustrations ↗</h3></a><p>Analogue and digital illustration.</p></article></div></div></section>
+    <section id="workshops"><div class="wrap split"><div><span class="eyebrow">Learn together</span><h2>Workshops</h2><p class="prose">Private and group lessons in oil painting, still life drawing and painting, plein air painting, and collaborative drawing. Beginners and experienced artists are welcome.</p><a class="button" href="mailto:valirizzo86@gmail.com?subject=Workshop%20enquiry">Ask about workshops</a></div><img loading="lazy" src="https://static.wixstatic.com/media/8be133_0cd5cf7832894fc5b6214b515ec6cce0~mv2.png" alt="Art workshop"></div></section>
+    <section id="news"><div class="wrap"><span class="eyebrow">Exhibitions & collaborations</span><h2>News</h2><p class="prose">A few recent highlights. Follow Valeria on Instagram for photographs, current activities and announcements.</p><ol class="timeline"><li><time datetime="2025">2025</time><p>Exhibited at Aalborg i Farver Art Festival, Aalborg.</p><a href="https://www.instagram.com/valipaint/" target="_blank" rel="noopener noreferrer">See Valeria's Instagram ↗</a></li><li><time datetime="2024">2024</time><p>Duo exhibition at MO.CA Cultural Center, Brescia.</p><a href="https://www.instagram.com/valipaint/" target="_blank" rel="noopener noreferrer">See Valeria's Instagram ↗</a></li><li><time datetime="2023">2023</time><p>Group exhibitions at Huset's Gallery, Arrest Cultural Center and Backyard Studios.</p><a href="https://www.instagram.com/valipaint/" target="_blank" rel="noopener noreferrer">See Valeria's Instagram ↗</a></li><li><time datetime="2019">2019–2023</time><p>Collaborative drawing for Aalborg's Culture Vitaminer programme.</p><a href="https://www.instagram.com/valipaint/" target="_blank" rel="noopener noreferrer">See Valeria's Instagram ↗</a></li></ol><p class="note">Individual post links can replace the profile links in this timeline when the matching Instagram posts are available.</p></div></section>
+    <section id="contact"><div class="wrap"><span class="eyebrow">Get in touch</span><h2>Visit Artelier</h2><p>Svendsgade 6, backyard<br>9000 Aalborg, Denmark</p><p>Please arrange a visit before coming by.</p><p><a href="mailto:valirizzo86@gmail.com">valirizzo86@gmail.com</a><br><a href="tel:+4581730426">+45 81 73 04 26</a></p></div></section>
+  </main>
+  <footer><div class="wrap">© <span id="year"></span> Valeria Rizzo · <a href="https://www.instagram.com/valipaint/">Instagram</a></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
